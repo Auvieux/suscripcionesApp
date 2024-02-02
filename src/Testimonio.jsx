@@ -10,11 +10,14 @@ export const Testimonio = ({imagen, nombre, pais, cargo, empresa, testimonio}) =
             <img 
               className='imagen-testimonio' 
               src={imagen}
-              style={{ border: '1px solid red' }} 
             />
             <div className="contenedor-texto-testimonio">
-                <p className='nombre'>{nombre} in {pais}</p>
-                <p className='cargo'>{cargo} at {empresa}</p>
+                <p className='nombre'>
+                  <strong>{nombre}</strong> in {pais}
+                </p>
+                <p className='cargo'>
+                  {cargo} at <strong>{empresa}</strong>
+                </p>
                 <p className='text'>"{testimonio}"</p>
             </div>          
         </div>
